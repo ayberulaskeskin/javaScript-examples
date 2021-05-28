@@ -20,5 +20,27 @@ let title =document.querySelector("#title")
 title.classList.add("old-info")
 title.classList.add("text-primary")
 title.classList.add("text-second")
-title.classList.replace("old-info","new-info")
+title.classList.replace("old-info","real-info")
 console.log(title.classList)
+document.getElementById("addBtnClick").addEventListener("click", addClicked);
+function addClicked(){
+  
+  title.classList.add('info');
+  } 
+  document.getElementById("removeBtnClick").addEventListener("click", removeClicked);
+function removeClicked(){
+  
+  title.classList.remove('info','info-new')
+  } 
+  document.getElementById("replaceBtnClick").addEventListener("click", replaceClicked);
+  function replaceClicked(){
+    
+    title.classList.replace('info','info-new');
+  } 
+  document.getElementById("containsBtnClick").addEventListener("click", containsClicked);
+  function containsClicked(){
+    
+    alert(title.classList.contains("classList"));
+  } 
+
+
