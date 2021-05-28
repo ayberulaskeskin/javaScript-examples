@@ -42,5 +42,10 @@ function removeClicked(){
     
     alert(title.classList.contains("classList"));
   } 
+  document.getElementById("itemBtnClick").addEventListener("click", itemClicked);
+  function itemClicked(){
+    
+    alert(title.classList.item(0));
+  } 
 
 
