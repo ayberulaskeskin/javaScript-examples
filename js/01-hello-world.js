@@ -14,5 +14,11 @@ firstChild.innerHTML+=" ekledim "
 let ulDOM=document.querySelector("ul#list")
 let liDOM=document.createElement("li")
 liDOM.innerHTML="yeni oluşturduğum"
-ulDOM.appendChild(liDOM)
-ulDOM.prepend(liDOM)
+//ulDOM.appendChild(liDOM)
+ulDOM.prepend(liDOM)//öğeyi başa ekledim
+let title =document.querySelector("#title")
+title.classList.add("old-info")
+title.classList.add("text-primary")
+title.classList.add("text-second")
+title.classList.replace("old-info","new-info")
+console.log(title.classList)
